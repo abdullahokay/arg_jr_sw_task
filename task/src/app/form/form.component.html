@@ -1,0 +1,21 @@
+<div class="form">
+  <div class="field">
+    <span class="header">İsim: </span>
+    <input type="text" [(ngModel)]="formData.name"/>
+  </div>
+  <div class="field">
+    <span class="header">Soyisim: </span>
+    <input type="text" [(ngModel)]="formData.lastName"/>
+  </div>
+  <div class="field">
+    <span class="header">E-mail: </span>
+    <input type="text" [(ngModel)]="formData.eMail"/>
+  </div>
+  <div class="field">
+    <span class="header">Doğum Günü: </span>
+    <input type="text" [(ngModel)]="formData.birthDay"/>
+  </div>
+  <div class="save-btn">
+    <button type="button" class="btn" (click)="postData()">Save</button>
+  </div>
+</div>
