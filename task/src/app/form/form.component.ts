@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -18,7 +18,7 @@ export class FormComponent {
   constructor(private http: HttpClient) { }
 
   postData() {
-    const apiUrl = 'https://localhost:7014/SaveUser'; // API'nin URL'sini buraya ekleyin
+    const apiUrl = 'https://localhost:7014/Test/SaveUser';
     this.http.post(apiUrl, this.formData).subscribe(
       (response => {
         console.log('Post işlemi başarılı:', response);

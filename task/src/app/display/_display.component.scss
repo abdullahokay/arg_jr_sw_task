@@ -1,0 +1,17 @@
+@import "../form/form.component";
+
+table {
+  width: 100%;
+  margin-top: 50px;
+
+  td, th {
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+}
+
+.table {
+  .btn {
+    margin-top: 20px;
+  }
+}

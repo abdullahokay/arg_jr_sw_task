@@ -1,0 +1,16 @@
+<div class="form">
+  <app-form></app-form>
+</div>
+<div class="table">
+  <button class="btn" (click)="getData()">Get</button>
+  <table *ngIf="Persons.length !== 0">
+    <tr>
+      <th>İsim</th>
+      <th>Soyisim</th>
+    </tr>
+    <tr *ngFor="let person of Persons">
+      <td>{{ person.name }}</td>
+      <td>{{ person.lastName }}</td>
+    </tr>
+  </table>
+</div>
